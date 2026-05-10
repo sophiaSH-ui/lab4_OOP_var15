@@ -1,0 +1,140 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|e:\\2 course 2 sem\\oop labs\\lab4_oop_var15\\lab4_oop\\lab4_oop\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|solutionrelative:lab4_oop\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|e:\\2 course 2 sem\\oop labs\\lab4_oop_var15\\lab4_oop\\lab4_oop\\migrations\\20260510135935_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|solutionrelative:lab4_oop\\migrations\\20260510135935_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|e:\\2 course 2 sem\\oop labs\\lab4_oop_var15\\lab4_oop\\lab4_oop\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|solutionrelative:lab4_oop\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|e:\\2 course 2 sem\\oop labs\\lab4_oop_var15\\lab4_oop\\lab4_oop\\dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|solutionrelative:lab4_oop\\dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|e:\\2 course 2 sem\\oop labs\\lab4_oop_var15\\lab4_oop\\lab4_oop\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|solutionrelative:lab4_oop\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|e:\\2 course 2 sem\\oop labs\\lab4_oop_var15\\lab4_oop\\lab4_oop\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|solutionrelative:lab4_oop\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|e:\\2 course 2 sem\\oop labs\\lab4_oop_var15\\lab4_oop\\lab4_oop\\lab4_oop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|solutionrelative:lab4_oop\\lab4_oop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20260510135935_InitialCreate.cs",
+              "DocumentMoniker": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\Migrations\\20260510135935_InitialCreate.cs",
+              "RelativeDocumentMoniker": "lab4_oop\\Migrations\\20260510135935_InitialCreate.cs",
+              "ToolTip": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\Migrations\\20260510135935_InitialCreate.cs",
+              "RelativeToolTip": "lab4_oop\\Migrations\\20260510135935_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T13:59:36.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.xaml",
+              "DocumentMoniker": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\App.xaml",
+              "RelativeDocumentMoniker": "lab4_oop\\App.xaml",
+              "ToolTip": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\App.xaml",
+              "RelativeToolTip": "lab4_oop\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-10T13:49:41.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "lab4_oop\\AppDbContext.cs",
+              "ToolTip": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\AppDbContext.cs",
+              "RelativeToolTip": "lab4_oop\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T13:46:04.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "lab4_oop.csproj",
+              "DocumentMoniker": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\lab4_oop.csproj",
+              "RelativeDocumentMoniker": "lab4_oop\\lab4_oop.csproj",
+              "ToolTip": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\lab4_oop.csproj",
+              "RelativeToolTip": "lab4_oop\\lab4_oop.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-10T13:41:47.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DTOs.cs",
+              "DocumentMoniker": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\DTOs.cs",
+              "RelativeDocumentMoniker": "lab4_oop\\DTOs.cs",
+              "ToolTip": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\DTOs.cs",
+              "RelativeToolTip": "lab4_oop\\DTOs.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAA6wDYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T13:08:33.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "lab4_oop\\MainWindow.xaml",
+              "ToolTip": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\MainWindow.xaml*",
+              "RelativeToolTip": "lab4_oop\\MainWindow.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-10T12:54:16.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "lab4_oop\\MainWindow.xaml.cs",
+              "ToolTip": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\MainWindow.xaml.cs",
+              "RelativeToolTip": "lab4_oop\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T12:54:14.891Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
