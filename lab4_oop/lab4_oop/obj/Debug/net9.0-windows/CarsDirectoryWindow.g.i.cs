@@ -76,7 +76,7 @@ namespace lab4_oop {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/lab4_oop;component/carsdirectorywindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/lab4_oop;V1.0.0.0;component/carsdirectorywindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\CarsDirectoryWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

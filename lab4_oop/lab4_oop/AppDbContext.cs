@@ -13,7 +13,11 @@ namespace lab4_oop
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string dbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "AutoDB.mdf");
-            optionsBuilder.UseSqlServer($"Server=(localdb)\\mssqllocaldb;AttachDbFilename={dbPath};Database=AutoDB;Trusted_Connection=True;MultipleActiveResultSets=true");
+
+            optionsBuilder.UseSqlServer(
+                $"Server=(localdb)\\mssqllocaldb;AttachDbFilename={dbPath};Database=AutoDB;Trusted_Connection=True;MultipleActiveResultSets=true",
+                options => options.EnableRetryOnFailure()
+            );
         }
     }
 }

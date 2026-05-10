@@ -2,7 +2,6 @@ E:\2 course 2 sem\OOP labs\lab4_OOP_var15\lab4_oop\lab4_oop\obj\Debug\net9.0-win
 E:\2 course 2 sem\OOP labs\lab4_OOP_var15\lab4_oop\lab4_oop\obj\Debug\net9.0-windows\MainWindow.g.cs
 E:\2 course 2 sem\OOP labs\lab4_OOP_var15\lab4_oop\lab4_oop\obj\Debug\net9.0-windows\App.g.cs
 E:\2 course 2 sem\OOP labs\lab4_OOP_var15\lab4_oop\lab4_oop\obj\Debug\net9.0-windows\lab4_oop_MarkupCompile.cache
-E:\2 course 2 sem\OOP labs\lab4_OOP_var15\lab4_oop\lab4_oop\bin\Debug\net9.0-windows\AutoDB.mdf
 E:\2 course 2 sem\OOP labs\lab4_OOP_var15\lab4_oop\lab4_oop\bin\Debug\net9.0-windows\lab4_oop.exe
 E:\2 course 2 sem\OOP labs\lab4_OOP_var15\lab4_oop\lab4_oop\bin\Debug\net9.0-windows\Azure.Core.dll
 E:\2 course 2 sem\OOP labs\lab4_OOP_var15\lab4_oop\lab4_oop\bin\Debug\net9.0-windows\Azure.Identity.dll
