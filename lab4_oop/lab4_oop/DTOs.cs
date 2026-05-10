@@ -16,24 +16,86 @@ namespace lab4_oop
     {
         [Key]
         public int Id { get; set; }
-        public string Manufacturer { get; set; }
-        public string Model { get; set; }
-        public int Year { get; set; }
-        public int Price { get; set; }
+
+        private string _manufacturer;
+        public string Manufacturer
+        {
+            get => _manufacturer;
+            set => _manufacturer = value;
+        }
+
+        private string _model;
+        public string Model
+        {
+            get => _model;
+            set => _model = value;
+        }
+
+        private int _year;
+        public int Year
+        {
+            get => _year;
+            set => _year = value;
+        }
+
+        private int _price;
+        public int Price
+        {
+            get => _price;
+            set => _price = value;
+        }
     }
 
     public class Vehicle
     {
         [Key]
         public int Id { get; set; }
-        public CarCategory Category { get; set; }
+
+        private CarCategory _category;
+        public CarCategory Category
+        {
+            get => _category;
+            set => _category = value;
+        }
+
         public int CarId { get; set; }
         public virtual Car Car { get; set; }
-        public DateTime RentalStartDate { get; set; }
-        public int RentalPrice { get; set; }
-        public int RentalDurationDays { get; set; }
-        public string LicensePlate { get; set; }
-        public bool IsCompleted { get; set; }
+
+        private DateTime _rentalStartDate;
+        public DateTime RentalStartDate
+        {
+            get => _rentalStartDate;
+            set => _rentalStartDate = value;
+        }
+
+        private int _rentalPrice;
+        public int RentalPrice
+        {
+            get => _rentalPrice;
+            set => _rentalPrice = value;
+        }
+
+        private int _rentalDurationDays;
+        public int RentalDurationDays
+        {
+            get => _rentalDurationDays;
+            set => _rentalDurationDays = value;
+        }
+
+        private string _licensePlate;
+        public string LicensePlate
+        {
+            get => _licensePlate;
+            set => _licensePlate = value;
+        }
+
+        private bool _isCompleted;
+        public bool IsCompleted
+        {
+            get => _isCompleted;
+            set => _isCompleted = value;
+        }
+
         public int? RentalCompanyId { get; set; }
         public virtual RentalCompany RentalCompany { get; set; }
     }
@@ -44,7 +106,6 @@ namespace lab4_oop
         public int Id { get; set; }
 
         private string _companyName;
-
         public string CompanyName
         {
             get => _companyName;
