@@ -1,7 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Linq;
-using System.Text.RegularExpressions;
 using System.Windows;
 
 namespace lab4_oop
@@ -65,14 +64,13 @@ namespace lab4_oop
                 return;
             }
 
-            if (!int.TryParse(txtYear.Text, out int year) || year < 1900 || year > DateTime.Now.Year + 1)
+            if (!InputValidator.IsValidYear(txtYear.Text))
             {
                 MessageBox.Show("Некоректний рік випуску!", "Помилка", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-            string platePattern = @"^[A-ZА-Я]{2}\d{4}[A-ZА-Я]{2}$";
-            if (!Regex.IsMatch(txtLicensePlate.Text.ToUpper(), platePattern))
+            if (!InputValidator.IsValidLicensePlate(txtLicensePlate.Text))
             {
                 MessageBox.Show("Формат номера: AA1234BB", "Помилка", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
@@ -80,7 +78,7 @@ namespace lab4_oop
 
             CurrentVehicle.Car.Manufacturer = cmbManufacturer.Text;
             CurrentVehicle.Car.Model = txtModel.Text;
-            CurrentVehicle.Car.Year = year;
+            CurrentVehicle.Car.Year = int.Parse(txtYear.Text);
             CurrentVehicle.Car.Price = int.Parse(txtCarPrice.Text);
             CurrentVehicle.Category = (CarCategory)cmbCategory.SelectedItem;
             CurrentVehicle.LicensePlate = txtLicensePlate.Text.ToUpper();

@@ -33,6 +33,16 @@ namespace lab4_oop
 
             vehiclesCollection = new ObservableCollection<Vehicle>(currentCompany.RentedVehicles);
             GridCars.ItemsSource = vehiclesCollection;
+            UpdateLabels();
+        }
+
+        private void UpdateLabels()
+        {
+            // Використовуємо стандартний ToString() для заголовка
+            txtFullInfo.Text = currentCompany.ToString();
+
+            // Використовуємо ToShortString() для нижньої панелі звіту
+            txtShortSummary.Text = currentCompany.ToShortString();
         }
 
         private void AddCar_Click(object sender, RoutedEventArgs e)
@@ -43,6 +53,7 @@ namespace lab4_oop
                 currentCompany.AddVehicle(window.CurrentVehicle);
                 db.SaveChanges();
                 vehiclesCollection.Add(window.CurrentVehicle);
+                UpdateLabels();
             }
         }
 
@@ -56,6 +67,7 @@ namespace lab4_oop
                     db.Entry(selectedVehicle).State = EntityState.Modified;
                     db.SaveChanges();
                     GridCars.Items.Refresh();
+                    UpdateLabels();
                 }
             }
         }
@@ -70,6 +82,7 @@ namespace lab4_oop
                     currentCompany.RemoveVehicle(selectedVehicle);
                     db.SaveChanges();
                     vehiclesCollection.Remove(selectedVehicle);
+                    UpdateLabels();
                 }
             }
         }
@@ -84,28 +97,18 @@ namespace lab4_oop
         {
             if (_isClosingFromX)
             {
-                var result = MessageBox.Show("Вийти з програми повністю?\n(Натисніть 'Ні', щоб просто повернутися до головного меню)", "Вихід", MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
-                if (result == MessageBoxResult.Yes)
-                {
-                    Application.Current.Shutdown();
-                }
-                else if (result == MessageBoxResult.No)
-                {
-                    _isClosingFromX = false;
-                }
-                else
-                {
-                    e.Cancel = true;
-                }
+                var result = MessageBox.Show("Вийти з програми повністю?\r(Ні - поверне до головного меню)", "Вихід", MessageBoxButton.YesNoCancel);
+                if (result == MessageBoxResult.Yes) Application.Current.Shutdown();
+                else if (result == MessageBoxResult.No) _isClosingFromX = false;
+                else e.Cancel = true;
             }
             base.OnClosing(e);
         }
 
         private void GridCars_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
-            bool hasSelection = GridCars.SelectedItem != null;
-            btnEdit.IsEnabled = hasSelection;
-            btnDelete.IsEnabled = hasSelection;
+            btnEdit.IsEnabled = GridCars.SelectedItem != null;
+            btnDelete.IsEnabled = GridCars.SelectedItem != null;
         }
     }
 }

@@ -42,7 +42,15 @@ namespace lab4_oop
     {
         [Key]
         public int Id { get; set; }
-        public string CompanyName { get; set; }
+
+        private string _companyName;
+
+        public string CompanyName
+        {
+            get => _companyName;
+            set => _companyName = value;
+        }
+
         public virtual List<Vehicle> RentedVehicles { get; set; } = new List<Vehicle>();
 
         public void AddVehicle(Vehicle vehicle)
@@ -61,6 +69,11 @@ namespace lab4_oop
             }
         }
 
+        public override string ToString()
+        {
+            return $"Прокатна фірма: {CompanyName}, Загальна кількість замовлень у списку: {RentedVehicles.Count}";
+        }
+
         public string ToShortString()
         {
             int totalValue = 0;
@@ -74,7 +87,7 @@ namespace lab4_oop
                     }
                 }
             }
-            return $"Фірма: {CompanyName}, Дата: {DateTime.Now.ToShortDateString()}, Сумарна вартість: {totalValue}";
+            return $"Фірма: {CompanyName}, Дата: {DateTime.Now:dd.MM.yyyy}, Сумарна вартість авто: {totalValue}$";
         }
     }
 }

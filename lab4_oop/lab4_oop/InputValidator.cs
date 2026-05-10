@@ -65,15 +65,11 @@ namespace lab4_oop
         {
             TextBox textBox = sender as TextBox;
             if (textBox == null) return;
-
             if (Regex.IsMatch(e.Text, @"^\d+$")) return;
-
             if ((e.Text == "," || e.Text == ".") && !textBox.Text.Contains(",") && !textBox.Text.Contains("."))
                 return;
-
             if (e.Text == "-" && textBox.SelectionStart == 0 && !textBox.Text.Contains("-"))
                 return;
-
             e.Handled = true;
         }
 
@@ -87,6 +83,17 @@ namespace lab4_oop
                     e.CancelCommand();
             }
             else e.CancelCommand();
+        }
+
+        public static bool IsValidYear(string yearText)
+        {
+            return int.TryParse(yearText, out int year) && year >= 1900 && year <= DateTime.Now.Year + 1;
+        }
+
+        public static bool IsValidLicensePlate(string plate)
+        {
+            string platePattern = @"^[A-ZА-Я]{2}\d{4}[A-ZА-Я]{2}$";
+            return Regex.IsMatch(plate?.ToUpper() ?? "", platePattern);
         }
 
         public static bool HasAtLeastOneLetter(string text)
