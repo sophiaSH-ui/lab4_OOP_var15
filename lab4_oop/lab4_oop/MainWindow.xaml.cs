@@ -12,7 +12,12 @@ namespace lab4_oop
         private void OpenCars_Click(object sender, RoutedEventArgs e)
         {
             CarsDirectoryWindow carsWindow = new CarsDirectoryWindow();
-            carsWindow.ShowDialog();
+
+            this.Hide(); 
+
+            carsWindow.ShowDialog(); 
+
+            this.Show(); 
         }
 
         private void OpenKitties_Click(object sender, RoutedEventArgs e)

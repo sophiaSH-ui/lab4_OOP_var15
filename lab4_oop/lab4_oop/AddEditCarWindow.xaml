@@ -4,56 +4,42 @@
         Title="Оформлення прокату" Height="480" Width="600"
         WindowStartupLocation="CenterScreen"
         Background="#F3E8DF">
-
     <Grid Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-
         <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="20"/>
                 <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
-
             <StackPanel Grid.Column="0">
                 <TextBlock Text="🚗 ДАНІ АВТОМОБІЛЯ" Foreground="#452829" FontWeight="Bold" Margin="0,0,0,15"/>
-
                 <TextBlock Text="Фірма-виробник:" Foreground="#452829" FontWeight="SemiBold" Margin="0,0,0,5"/>
-                <TextBox x:Name="txtManufacturer" Height="30" Padding="5" Margin="0,0,0,10" Background="#E8D1C5" BorderBrush="#57595B"/>
-
+                <ComboBox x:Name="cmbManufacturer" IsEditable="True" Height="30" Margin="0,0,0,10" Background="#E8D1C5" BorderBrush="#57595B"/>
                 <TextBlock Text="Модель:" Foreground="#452829" FontWeight="SemiBold" Margin="0,0,0,5"/>
                 <TextBox x:Name="txtModel" Height="30" Padding="5" Margin="0,0,0,10" Background="#E8D1C5" BorderBrush="#57595B"/>
-
-                <TextBlock Text="Рік випуску:" Foreground="#452829" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                <TextBlock Text="Рік випуску (1900-2027):" Foreground="#452829" FontWeight="SemiBold" Margin="0,0,0,5"/>
                 <TextBox x:Name="txtYear" Height="30" Padding="5" Margin="0,0,0,10" Background="#E8D1C5" BorderBrush="#57595B"/>
-
                 <TextBlock Text="Вартість авто ($):" Foreground="#452829" FontWeight="SemiBold" Margin="0,0,0,5"/>
                 <TextBox x:Name="txtCarPrice" Height="30" Padding="5" Margin="0,0,0,10" Background="#E8D1C5" BorderBrush="#57595B"/>
-
                 <TextBlock Text="Категорія:" Foreground="#452829" FontWeight="SemiBold" Margin="0,0,0,5"/>
                 <ComboBox x:Name="cmbCategory" Height="30" Margin="0,0,0,10" Background="#E8D1C5" BorderBrush="#57595B"/>
             </StackPanel>
-
             <StackPanel Grid.Column="2">
                 <TextBlock Text="📝 ДАНІ ПРОКАТУ" Foreground="#452829" FontWeight="Bold" Margin="0,0,0,15"/>
-
-                <TextBlock Text="Номерний знак:" Foreground="#452829" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                <TextBlock Text="Номерний знак (напр. AA1234BB):" Foreground="#452829" FontWeight="SemiBold" Margin="0,0,0,5"/>
                 <TextBox x:Name="txtLicensePlate" Height="30" Padding="5" Margin="0,0,0,10" Background="#E8D1C5" BorderBrush="#57595B"/>
-
                 <TextBlock Text="Дата початку прокату:" Foreground="#452829" FontWeight="SemiBold" Margin="0,0,0,5"/>
                 <DatePicker x:Name="dpRentalStart" Height="30" Margin="0,0,0,10" BorderBrush="#57595B"/>
-
                 <TextBlock Text="Тривалість (днів):" Foreground="#452829" FontWeight="SemiBold" Margin="0,0,0,5"/>
                 <TextBox x:Name="txtDuration" Height="30" Padding="5" Margin="0,0,0,10" Background="#E8D1C5" BorderBrush="#57595B"/>
-
                 <TextBlock Text="Вартість прокату ($):" Foreground="#452829" FontWeight="SemiBold" Margin="0,0,0,5"/>
                 <TextBox x:Name="txtRentalPrice" Height="30" Padding="5" Margin="0,0,0,10" Background="#E8D1C5" BorderBrush="#57595B"/>
             </StackPanel>
         </Grid>
-
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
             <Button Content="Зберегти" Width="120" Height="40" Margin="0,0,15,0" Background="#57595B" Foreground="#F3E8DF" Cursor="Hand" Click="Save_Click">
                 <Button.Template>

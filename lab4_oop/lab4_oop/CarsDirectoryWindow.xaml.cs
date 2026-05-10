@@ -53,7 +53,12 @@ namespace lab4_oop
         {
             if (GridCars.SelectedItem is Vehicle selectedVehicle)
             {
-                if (MessageBox.Show("Видалити цей запис?", "Підтвердження", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                var result = MessageBox.Show("Ви впевнені, що хочете остаточно видалити цей запис про транспортний засіб?",
+                                           "Підтвердження видалення",
+                                           MessageBoxButton.YesNo,
+                                           MessageBoxImage.Warning);
+
+                if (result == MessageBoxResult.Yes)
                 {
                     db.Vehicles.Remove(selectedVehicle);
                     db.SaveChanges();
