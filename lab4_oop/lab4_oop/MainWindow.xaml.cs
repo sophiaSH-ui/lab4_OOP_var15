@@ -11,12 +11,13 @@ namespace lab4_oop
 
         private void OpenCars_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Тут буде відкриватися довідник авто!", "Привіт!");
+            CarsDirectoryWindow carsWindow = new CarsDirectoryWindow();
+            carsWindow.ShowDialog();
         }
 
         private void OpenKitties_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Мяу! 🐱 (Тут будуть котики)", "KittyStar");
+            MessageBox.Show("Мяу! 🐱", "Gravity Auto");
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
