@@ -36,6 +36,7 @@ namespace lab4_oop
                 dpRentalStart.SelectedDate = vehicle.RentalStartDate;
                 txtDuration.Text = vehicle.RentalDurationDays.ToString();
                 txtRentalPrice.Text = vehicle.RentalPrice.ToString();
+                chbIsCompleted.IsChecked = vehicle.IsCompleted;
             }
             else
             {
@@ -66,14 +67,14 @@ namespace lab4_oop
 
             if (!int.TryParse(txtYear.Text, out int year) || year < 1900 || year > DateTime.Now.Year + 1)
             {
-                MessageBox.Show("Рік випуску має бути в межах від 1900 до " + (DateTime.Now.Year + 1), "Помилка року", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Некоректний рік випуску!", "Помилка", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
             string platePattern = @"^[A-ZА-Я]{2}\d{4}[A-ZА-Я]{2}$";
             if (!Regex.IsMatch(txtLicensePlate.Text.ToUpper(), platePattern))
             {
-                MessageBox.Show("Номерний знак має бути у форматі AA1234BB", "Помилка формату", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Формат номера: AA1234BB", "Помилка", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
@@ -86,6 +87,7 @@ namespace lab4_oop
             CurrentVehicle.RentalStartDate = dpRentalStart.SelectedDate ?? DateTime.Now;
             CurrentVehicle.RentalDurationDays = int.Parse(txtDuration.Text);
             CurrentVehicle.RentalPrice = int.Parse(txtRentalPrice.Text);
+            CurrentVehicle.IsCompleted = chbIsCompleted.IsChecked ?? false;
 
             _isDataSaved = true;
             this.DialogResult = true;

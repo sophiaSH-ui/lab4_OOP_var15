@@ -9,6 +9,7 @@ namespace lab4_oop
     {
         private AppDbContext db;
         private ObservableCollection<Vehicle> vehiclesCollection;
+        private RentalCompany currentCompany;
 
         public CarsDirectoryWindow()
         {
@@ -19,8 +20,16 @@ namespace lab4_oop
 
         private void LoadData()
         {
-            var vehiclesFromDb = db.Vehicles.Include(v => v.Car).ToList();
-            vehiclesCollection = new ObservableCollection<Vehicle>(vehiclesFromDb);
+            currentCompany = db.RentalCompanies.Include(c => c.RentedVehicles).ThenInclude(v => v.Car).FirstOrDefault();
+
+            if (currentCompany == null)
+            {
+                currentCompany = new RentalCompany { CompanyName = "Gravity Auto" };
+                db.RentalCompanies.Add(currentCompany);
+                db.SaveChanges();
+            }
+
+            vehiclesCollection = new ObservableCollection<Vehicle>(currentCompany.RentedVehicles);
             GridCars.ItemsSource = vehiclesCollection;
         }
 
@@ -29,7 +38,7 @@ namespace lab4_oop
             AddEditCarWindow window = new AddEditCarWindow();
             if (window.ShowDialog() == true)
             {
-                db.Vehicles.Add(window.CurrentVehicle);
+                currentCompany.AddVehicle(window.CurrentVehicle);
                 db.SaveChanges();
                 vehiclesCollection.Add(window.CurrentVehicle);
             }
@@ -53,14 +62,10 @@ namespace lab4_oop
         {
             if (GridCars.SelectedItem is Vehicle selectedVehicle)
             {
-                var result = MessageBox.Show("Ви впевнені, що хочете остаточно видалити цей запис про транспортний засіб?",
-                                           "Підтвердження видалення",
-                                           MessageBoxButton.YesNo,
-                                           MessageBoxImage.Warning);
-
+                var result = MessageBox.Show("Видалити цей запис?", "Підтвердження", MessageBoxButton.YesNo, MessageBoxImage.Warning);
                 if (result == MessageBoxResult.Yes)
                 {
-                    db.Vehicles.Remove(selectedVehicle);
+                    currentCompany.RemoveVehicle(selectedVehicle);
                     db.SaveChanges();
                     vehiclesCollection.Remove(selectedVehicle);
                 }

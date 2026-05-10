@@ -33,6 +33,7 @@ namespace lab4_oop
         public int RentalPrice { get; set; }
         public int RentalDurationDays { get; set; }
         public string LicensePlate { get; set; }
+        public bool IsCompleted { get; set; }
         public int? RentalCompanyId { get; set; }
         public virtual RentalCompany RentalCompany { get; set; }
     }
@@ -43,6 +44,22 @@ namespace lab4_oop
         public int Id { get; set; }
         public string CompanyName { get; set; }
         public virtual List<Vehicle> RentedVehicles { get; set; } = new List<Vehicle>();
+
+        public void AddVehicle(Vehicle vehicle)
+        {
+            if (vehicle != null)
+            {
+                RentedVehicles.Add(vehicle);
+            }
+        }
+
+        public void RemoveVehicle(Vehicle vehicle)
+        {
+            if (RentedVehicles.Contains(vehicle))
+            {
+                RentedVehicles.Remove(vehicle);
+            }
+        }
 
         public string ToShortString()
         {
@@ -57,7 +74,7 @@ namespace lab4_oop
                     }
                 }
             }
-            return $"Фірма: {CompanyName}, Дата: {DateTime.Now.ToShortDateString()}, Сумарна вартість авто: {totalValue}";
+            return $"Фірма: {CompanyName}, Дата: {DateTime.Now.ToShortDateString()}, Сумарна вартість: {totalValue}";
         }
     }
 }

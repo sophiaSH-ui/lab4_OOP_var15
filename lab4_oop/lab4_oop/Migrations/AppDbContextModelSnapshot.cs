@@ -80,6 +80,9 @@ namespace lab4_oop.Migrations
                     b.Property<int>("Category")
                         .HasColumnType("int");
 
+                    b.Property<bool>("IsCompleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("LicensePlate")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
