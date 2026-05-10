@@ -1,7 +1,7 @@
 ﻿<Window x:Class="lab4_oop.CarsDirectoryWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Довідник автомобілів" Height="450" Width="800"
+        Title="Довідник автомобілів" Height="480" Width="800"
         WindowStartupLocation="CenterScreen"
         Background="#F3E8DF">
     <Grid Margin="15">
@@ -11,7 +11,12 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Text="Список оформлених транспортних засобів" FontSize="20" FontWeight="Bold" Foreground="#452829" Margin="0,0,0,10" Grid.Row="0"/>
+        <StackPanel Grid.Row="0" Margin="0,0,0,10">
+            <Button Content="← Назад до головного меню" HorizontalAlignment="Left" Background="Transparent" 
+                    BorderThickness="0" Foreground="#57595B" FontWeight="Bold" Cursor="Hand" 
+                    Click="Back_Click" Margin="0,0,0,10"/>
+            <TextBlock Text="Список оформлених транспортних засобів" FontSize="20" FontWeight="Bold" Foreground="#452829"/>
+        </StackPanel>
 
         <DataGrid x:Name="GridCars" Grid.Row="1" AutoGenerateColumns="False" 
                   CanUserAddRows="False" IsReadOnly="True" SelectionMode="Single" 

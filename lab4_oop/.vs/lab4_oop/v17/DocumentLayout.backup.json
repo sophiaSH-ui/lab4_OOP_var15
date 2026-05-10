@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|e:\\2 course 2 sem\\oop labs\\lab4_oop_var15\\lab4_oop\\lab4_oop\\addeditcarwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|solutionrelative:lab4_oop\\addeditcarwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|e:\\2 course 2 sem\\oop labs\\lab4_oop_var15\\lab4_oop\\lab4_oop\\addeditcarwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|solutionrelative:lab4_oop\\addeditcarwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|e:\\2 course 2 sem\\oop labs\\lab4_oop_var15\\lab4_oop\\lab4_oop\\carsdirectorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|solutionrelative:lab4_oop\\carsdirectorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\Migrations\\20260510182209_AddIsCompletedToVehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lab4_oop\\Migrations\\20260510182209_AddIsCompletedToVehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\Migrations\\20260510184041_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lab4_oop\\Migrations\\20260510184041_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|e:\\2 course 2 sem\\oop labs\\lab4_oop_var15\\lab4_oop\\lab4_oop\\carsdirectorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|solutionrelative:lab4_oop\\carsdirectorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|e:\\2 course 2 sem\\oop labs\\lab4_oop_var15\\lab4_oop\\lab4_oop\\carsdirectorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|solutionrelative:lab4_oop\\carsdirectorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|e:\\2 course 2 sem\\oop labs\\lab4_oop_var15\\lab4_oop\\lab4_oop\\dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|solutionrelative:lab4_oop\\dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|e:\\2 course 2 sem\\oop labs\\lab4_oop_var15\\lab4_oop\\lab4_oop\\addeditcarwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|solutionrelative:lab4_oop\\addeditcarwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|e:\\2 course 2 sem\\oop labs\\lab4_oop_var15\\lab4_oop\\lab4_oop\\inputvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|solutionrelative:lab4_oop\\inputvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|e:\\2 course 2 sem\\oop labs\\lab4_oop_var15\\lab4_oop\\lab4_oop\\addeditcarwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|solutionrelative:lab4_oop\\addeditcarwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|e:\\2 course 2 sem\\oop labs\\lab4_oop_var15\\lab4_oop\\lab4_oop\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|e:\\2 course 2 sem\\oop labs\\lab4_oop_var15\\lab4_oop\\lab4_oop\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|solutionrelative:lab4_oop\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|e:\\2 course 2 sem\\oop labs\\lab4_oop_var15\\lab4_oop\\lab4_oop\\inputvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|solutionrelative:lab4_oop\\inputvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9827A159-470C-41DB-BA66-5CF14FDB684D}|lab4_oop\\lab4_oop.csproj|e:\\2 course 2 sem\\oop labs\\lab4_oop_var15\\lab4_oop\\lab4_oop\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -58,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,26 +70,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20260510182209_AddIsCompletedToVehicle.cs",
-              "DocumentMoniker": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\Migrations\\20260510182209_AddIsCompletedToVehicle.cs",
-              "RelativeDocumentMoniker": "lab4_oop\\Migrations\\20260510182209_AddIsCompletedToVehicle.cs",
-              "ToolTip": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\Migrations\\20260510182209_AddIsCompletedToVehicle.cs",
-              "RelativeToolTip": "lab4_oop\\Migrations\\20260510182209_AddIsCompletedToVehicle.cs",
+              "DocumentIndex": 0,
+              "Title": "20260510184041_InitialCreate.cs",
+              "DocumentMoniker": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\Migrations\\20260510184041_InitialCreate.cs",
+              "RelativeDocumentMoniker": "lab4_oop\\Migrations\\20260510184041_InitialCreate.cs",
+              "ToolTip": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\Migrations\\20260510184041_InitialCreate.cs",
+              "RelativeToolTip": "lab4_oop\\Migrations\\20260510184041_InitialCreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T18:22:09.61Z",
+              "WhenOpened": "2026-05-10T18:40:41.739Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "CarsDirectoryWindow.xaml.cs",
               "DocumentMoniker": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\CarsDirectoryWindow.xaml.cs",
               "RelativeDocumentMoniker": "lab4_oop\\CarsDirectoryWindow.xaml.cs",
               "ToolTip": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\CarsDirectoryWindow.xaml.cs",
               "RelativeToolTip": "lab4_oop\\CarsDirectoryWindow.xaml.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAkwBUAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAA5wD0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-10T14:53:21.591Z",
               "EditorCaption": ""
@@ -103,12 +103,11 @@
               "ToolTip": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\CarsDirectoryWindow.xaml",
               "RelativeToolTip": "lab4_oop\\CarsDirectoryWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-10T14:52:13.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-10T14:52:13.242Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "InputValidator.cs",
               "DocumentMoniker": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\InputValidator.cs",
               "RelativeDocumentMoniker": "lab4_oop\\InputValidator.cs",
@@ -116,33 +115,30 @@
               "RelativeToolTip": "lab4_oop\\InputValidator.cs",
               "ViewState": "AgIAAEUAAAAAAAAAAAAgwGAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T14:51:21.488Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-10T14:51:21.488Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "AddEditCarWindow.xaml.cs",
               "DocumentMoniker": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\AddEditCarWindow.xaml.cs",
               "RelativeDocumentMoniker": "lab4_oop\\AddEditCarWindow.xaml.cs",
               "ToolTip": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\AddEditCarWindow.xaml.cs",
               "RelativeToolTip": "lab4_oop\\AddEditCarWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowA8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T14:50:02.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-10T14:50:02.242Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "AddEditCarWindow.xaml",
               "DocumentMoniker": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\AddEditCarWindow.xaml",
               "RelativeDocumentMoniker": "lab4_oop\\AddEditCarWindow.xaml",
               "ToolTip": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\AddEditCarWindow.xaml",
               "RelativeToolTip": "lab4_oop\\AddEditCarWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-10T14:47:01.671Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-10T14:47:01.671Z"
             },
             {
               "$type": "Document",
@@ -153,12 +149,11 @@
               "ToolTip": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\App.xaml",
               "RelativeToolTip": "lab4_oop\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-10T13:49:41.469Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-10T13:49:41.469Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\AppDbContext.cs",
               "RelativeDocumentMoniker": "lab4_oop\\AppDbContext.cs",
@@ -166,8 +161,7 @@
               "RelativeToolTip": "lab4_oop\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T13:46:04.705Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-10T13:46:04.705Z"
             },
             {
               "$type": "Document",
@@ -179,37 +173,34 @@
               "RelativeToolTip": "lab4_oop\\lab4_oop.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-10T13:41:47.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-10T13:41:47.254Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "DTOs.cs",
               "DocumentMoniker": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\DTOs.cs",
               "RelativeDocumentMoniker": "lab4_oop\\DTOs.cs",
               "ToolTip": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\DTOs.cs",
               "RelativeToolTip": "lab4_oop\\DTOs.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAwwD8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAuwE8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T13:08:33.021Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-10T13:08:33.021Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\MainWindow.xaml",
               "RelativeDocumentMoniker": "lab4_oop\\MainWindow.xaml",
               "ToolTip": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\MainWindow.xaml",
               "RelativeToolTip": "lab4_oop\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-10T12:54:16.706Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-10T12:54:16.706Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "E:\\2 course 2 sem\\OOP labs\\lab4_OOP_var15\\lab4_oop\\lab4_oop\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "lab4_oop\\MainWindow.xaml.cs",
@@ -217,8 +208,7 @@
               "RelativeToolTip": "lab4_oop\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAgwBMAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T12:54:14.891Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-10T12:54:14.891Z"
             }
           ]
         }

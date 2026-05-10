@@ -2,6 +2,7 @@
 using System.Windows;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 
 namespace lab4_oop
 {
@@ -10,6 +11,7 @@ namespace lab4_oop
         private AppDbContext db;
         private ObservableCollection<Vehicle> vehiclesCollection;
         private RentalCompany currentCompany;
+        private bool _isClosingFromX = true;
 
         public CarsDirectoryWindow()
         {
@@ -70,6 +72,33 @@ namespace lab4_oop
                     vehiclesCollection.Remove(selectedVehicle);
                 }
             }
+        }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            _isClosingFromX = false;
+            this.Close();
+        }
+
+        protected override void OnClosing(CancelEventArgs e)
+        {
+            if (_isClosingFromX)
+            {
+                var result = MessageBox.Show("Вийти з програми повністю?\n(Натисніть 'Ні', щоб просто повернутися до головного меню)", "Вихід", MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
+                {
+                    Application.Current.Shutdown();
+                }
+                else if (result == MessageBoxResult.No)
+                {
+                    _isClosingFromX = false;
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
+            base.OnClosing(e);
         }
 
         private void GridCars_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
