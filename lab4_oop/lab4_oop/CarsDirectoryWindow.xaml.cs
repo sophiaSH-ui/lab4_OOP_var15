@@ -129,9 +129,20 @@ namespace lab4_oop
             if (_isClosingFromX)
             {
                 var result = MessageBox.Show("Вийти з програми повністю?\r(Ні - поверне до головного меню)", "Вихід", MessageBoxButton.YesNoCancel);
-                if (result == MessageBoxResult.Yes) Application.Current.Shutdown();
-                else if (result == MessageBoxResult.No) _isClosingFromX = false;
-                else e.Cancel = true;
+
+                if (result == MessageBoxResult.Yes)
+                {
+                    MainWindow.IsForceClose = true; 
+                    Application.Current.Shutdown();
+                }
+                else if (result == MessageBoxResult.No)
+                {
+                    _isClosingFromX = false; 
+                }
+                else
+                {
+                    e.Cancel = true; 
+                }
             }
             base.OnClosing(e);
         }

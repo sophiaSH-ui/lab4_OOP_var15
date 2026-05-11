@@ -1,0 +1,38 @@
+﻿<Window x:Class="lab4_oop.CatWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Час для котиків!" Height="470" Width="400"
+        WindowStartupLocation="CenterScreen"
+        Background="#F3E8DF">
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Button Grid.Row="0" Content="← Назад до роботи" HorizontalAlignment="Left" Background="Transparent" 
+                BorderThickness="0" Foreground="#57595B" FontWeight="Bold" Cursor="Hand" 
+                Click="Back_Click" Margin="0,0,0,10"/>
+
+        <Border Grid.Row="1" BorderBrush="#57595B" BorderThickness="2" CornerRadius="8" Background="#E8D1C5" Margin="0,0,0,15" ClipToBounds="True">
+            <Image x:Name="imgCat" Stretch="UniformToFill"/>
+        </Border>
+
+        <Button Grid.Row="2" Content="Ще котика! 🐾" Height="45" Width="150" HorizontalAlignment="Center" 
+                Background="#57595B" Foreground="#F3E8DF" FontSize="16" FontWeight="Bold" Cursor="Hand" Click="NextCat_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name="bd" Background="{TemplateBinding Background}" CornerRadius="8">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="bd" Property="Background" Value="#3C3D3F"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </Grid>
+</Window>

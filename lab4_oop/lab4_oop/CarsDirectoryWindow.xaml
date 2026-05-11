@@ -54,7 +54,7 @@
         <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,15,0,0">
             <Button Content="Додати авто" Width="110" Height="38" Margin="0,0,10,0" Background="#57595B" Foreground="#F3E8DF" Cursor="Hand" Click="AddCar_Click"/>
             <Button x:Name="btnEdit" Content="Редагувати" Width="110" Height="38" Margin="0,0,10,0" IsEnabled="False" Cursor="Hand" Click="EditCar_Click"/>
-            <Button x:Name="btnDelete" Content="Видалити" Width="110" Height="38" Background="#452829" IsEnabled="False" Cursor="Hand" Click="DeleteCar_Click"/>
+            <Button x:Name="btnDelete" Content="Видалити" Width="110" Height="38" IsEnabled="False" Cursor="Hand" Click="DeleteCar_Click"/>
         </StackPanel>
     </Grid>
 </Window>

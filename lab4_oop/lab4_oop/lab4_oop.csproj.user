@@ -13,6 +13,9 @@
     <Compile Update="CarsDirectoryWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="CatWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
