@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Windows;
@@ -14,6 +15,7 @@ namespace lab4_oop
         {
             InitializeComponent();
             LoadManufacturers();
+            LoadRentalCompanies();
             cmbCategory.ItemsSource = Enum.GetValues(typeof(CarCategory));
             cmbCategory.SelectedIndex = 0;
             dpRentalStart.SelectedDate = DateTime.Now;
@@ -36,6 +38,7 @@ namespace lab4_oop
                 txtDuration.Text = vehicle.RentalDurationDays.ToString();
                 txtRentalPrice.Text = vehicle.RentalPrice.ToString();
                 chbIsCompleted.IsChecked = vehicle.IsCompleted;
+                cmbRentalCompany.SelectedValue = vehicle.RentalCompanyId;
             }
             else
             {
@@ -53,12 +56,23 @@ namespace lab4_oop
             }
         }
 
+        private void LoadRentalCompanies()
+        {
+            using (var db = new AppDbContext())
+            {
+                var companies = db.RentalCompanies.ToList();
+                cmbRentalCompany.ItemsSource = companies;
+                cmbRentalCompany.SelectedValuePath = "Id";
+                if (companies.Any()) cmbRentalCompany.SelectedIndex = 0;
+            }
+        }
+
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(cmbManufacturer.Text) || string.IsNullOrWhiteSpace(txtModel.Text) ||
-                string.IsNullOrWhiteSpace(txtYear.Text) || string.IsNullOrWhiteSpace(txtCarPrice.Text) ||
-                string.IsNullOrWhiteSpace(txtLicensePlate.Text) || string.IsNullOrWhiteSpace(txtDuration.Text) ||
-                string.IsNullOrWhiteSpace(txtRentalPrice.Text))
+            if (cmbRentalCompany.SelectedItem == null || string.IsNullOrWhiteSpace(cmbManufacturer.Text) ||
+                string.IsNullOrWhiteSpace(txtModel.Text) || string.IsNullOrWhiteSpace(txtYear.Text) ||
+                string.IsNullOrWhiteSpace(txtCarPrice.Text) || string.IsNullOrWhiteSpace(txtLicensePlate.Text) ||
+                string.IsNullOrWhiteSpace(txtDuration.Text) || string.IsNullOrWhiteSpace(txtRentalPrice.Text))
             {
                 MessageBox.Show("Заповніть всі поля!", "Помилка", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
@@ -86,6 +100,7 @@ namespace lab4_oop
             CurrentVehicle.RentalDurationDays = int.Parse(txtDuration.Text);
             CurrentVehicle.RentalPrice = int.Parse(txtRentalPrice.Text);
             CurrentVehicle.IsCompleted = chbIsCompleted.IsChecked ?? false;
+            CurrentVehicle.RentalCompanyId = (int)cmbRentalCompany.SelectedValue;
 
             _isDataSaved = true;
             this.DialogResult = true;

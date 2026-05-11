@@ -17,39 +17,69 @@ namespace lab4_oop
         {
             InitializeComponent();
             db = new AppDbContext();
-            LoadData();
+            LoadCompanies();
         }
 
-        private void LoadData()
+        private void LoadCompanies()
         {
-            currentCompany = db.RentalCompanies.Include(c => c.RentedVehicles).ThenInclude(v => v.Car).FirstOrDefault();
+            var companies = db.RentalCompanies.Include(c => c.RentedVehicles).ThenInclude(v => v.Car).ToList();
 
-            if (currentCompany == null)
+            if (!companies.Any())
             {
-                currentCompany = new RentalCompany { CompanyName = "Gravity Auto" };
-                db.RentalCompanies.Add(currentCompany);
+                var newCompany = new RentalCompany { CompanyName = "Gravity Auto" };
+                db.RentalCompanies.Add(newCompany);
                 db.SaveChanges();
+                companies.Add(newCompany);
             }
 
-            vehiclesCollection = new ObservableCollection<Vehicle>(currentCompany.RentedVehicles);
-            GridCars.ItemsSource = vehiclesCollection;
-            UpdateLabels();
+            cmbCompanies.ItemsSource = companies;
+            cmbCompanies.SelectedIndex = 0;
+        }
+
+        private void cmbCompanies_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+            if (cmbCompanies.SelectedItem is RentalCompany selectedCompany)
+            {
+                currentCompany = selectedCompany;
+                vehiclesCollection = new ObservableCollection<Vehicle>(currentCompany.RentedVehicles);
+                GridCars.ItemsSource = vehiclesCollection;
+                UpdateLabels();
+            }
+        }
+
+        private void AddCompany_Click(object sender, RoutedEventArgs e)
+        {
+            string newName = txtNewCompanyName.Text.Trim();
+            if (!string.IsNullOrWhiteSpace(newName))
+            {
+                var newCompany = new RentalCompany { CompanyName = newName };
+                db.RentalCompanies.Add(newCompany);
+                db.SaveChanges();
+
+                var companies = db.RentalCompanies.Include(c => c.RentedVehicles).ThenInclude(v => v.Car).ToList();
+                cmbCompanies.ItemsSource = companies;
+                cmbCompanies.SelectedItem = companies.Last();
+                txtNewCompanyName.Clear();
+            }
         }
 
         private void UpdateLabels()
         {
-            // Використовуємо стандартний ToString() для заголовка
-            txtFullInfo.Text = currentCompany.ToString();
-
-            // Використовуємо ToShortString() для нижньої панелі звіту
-            txtShortSummary.Text = currentCompany.ToShortString();
+            if (currentCompany != null)
+            {
+                txtFullInfo.Text = currentCompany.ToString();
+                txtShortSummary.Text = currentCompany.ToShortString();
+            }
         }
 
         private void AddCar_Click(object sender, RoutedEventArgs e)
         {
+            if (currentCompany == null) return;
+
             AddEditCarWindow window = new AddEditCarWindow();
             if (window.ShowDialog() == true)
             {
+                window.CurrentVehicle.RentalCompanyId = currentCompany.Id;
                 currentCompany.AddVehicle(window.CurrentVehicle);
                 db.SaveChanges();
                 vehiclesCollection.Add(window.CurrentVehicle);
@@ -80,6 +110,7 @@ namespace lab4_oop
                 if (result == MessageBoxResult.Yes)
                 {
                     currentCompany.RemoveVehicle(selectedVehicle);
+                    db.Vehicles.Remove(selectedVehicle);
                     db.SaveChanges();
                     vehiclesCollection.Remove(selectedVehicle);
                     UpdateLabels();
