@@ -118,6 +118,26 @@ namespace lab4_oop
             }
         }
 
+        private void DeleteCompany_Click(object sender, RoutedEventArgs e)
+        {
+            if (currentCompany == null) return;
+
+            var result = MessageBox.Show($"Ви дійсно хочете видалити фірму \"{currentCompany.CompanyName}\"?\nВсі пов'язані автомобілі та замовлення також будуть безповоротно видалені!", "Підтвердження видалення", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+
+            if (result == MessageBoxResult.Yes)
+            {
+                if (currentCompany.RentedVehicles != null && currentCompany.RentedVehicles.Any())
+                {
+                    db.Vehicles.RemoveRange(currentCompany.RentedVehicles);
+                }
+
+                db.RentalCompanies.Remove(currentCompany);
+                db.SaveChanges();
+
+                LoadCompanies();
+            }
+        }
+
         private void Back_Click(object sender, RoutedEventArgs e)
         {
             _isClosingFromX = false;

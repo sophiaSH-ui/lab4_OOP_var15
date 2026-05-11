@@ -60,7 +60,7 @@ namespace lab4_oop {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/lab4_oop;component/catwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/lab4_oop;V1.0.0.0;component/catwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\CatWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

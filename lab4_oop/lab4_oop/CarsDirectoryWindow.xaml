@@ -22,8 +22,9 @@
 
         <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,10">
             <TextBlock Text="Оберіть прокат:" VerticalAlignment="Center" FontWeight="SemiBold" Foreground="#452829" Margin="0,0,10,0"/>
-            <ComboBox x:Name="cmbCompanies" Width="200" Height="30" DisplayMemberPath="CompanyName" SelectionChanged="cmbCompanies_SelectionChanged" Background="#E8D1C5"/>
-            <TextBox x:Name="txtNewCompanyName" Width="150" Height="30" Margin="20,0,10,0" Padding="5" Background="#E8D1C5"/>
+            <ComboBox x:Name="cmbCompanies" Width="170" Height="30" DisplayMemberPath="CompanyName" SelectionChanged="cmbCompanies_SelectionChanged" Background="#E8D1C5"/>
+            <Button x:Name="btnDeleteCompany" Content="🗑️" Width="30" Height="30" Margin="5,0,20,0" Background="#452829" Foreground="White" Cursor="Hand" ToolTip="Видалити фірму" Click="DeleteCompany_Click"/>
+            <TextBox x:Name="txtNewCompanyName" Width="140" Height="30" Margin="0,0,10,0" Padding="5" Background="#E8D1C5"/>
             <Button Content="Додати фірму" Width="110" Height="30" Background="#57595B" Foreground="#F3E8DF" Cursor="Hand" Click="AddCompany_Click"/>
         </StackPanel>
 
